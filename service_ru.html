@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>All Season – Ваш Путь в Узбекистан</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo%20only.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Загрузка...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <img src="img/logo%20only.png" alt="Логотип">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Главная</a>
+                <a href="about.html" class="nav-item nav-link">О нас</a>
+                <a href="service.html" class="nav-item nav-link active">Услуги</a>
+                <a href="package.html" class="nav-item nav-link">Туры</a>
+                <a href="contact.html" class="nav-item nav-link">Контакты</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Язык</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item" onclick="switchLang('en')">English</a>
+                        <a href="#" class="dropdown-item" onclick="switchLang('ru')">Русский</a>
+                        <a href="#" class="dropdown-item" onclick="switchLang('uz')">O‘zbek</a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="contact_ru.html" class="btn btn-primary rounded-pill py-2 px-4">Свяжитесь с нами сейчас!</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Услуги</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Услуги</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Услуги</h6>
+            <h1 class="mb-5">Наши услуги</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-globe fs-1 text-primary mb-4"></i>
+                        <h5>Международные туры</h5>
+                        <p>Мы организуем туры по всему Узбекистану для гостей из Японии и других стран мира. <br> <br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-buildings fs-1 text-primary mb-4"></i>
+                        <h5>Бронирование отелей</h5>
+                        <p>Комфортабельные, чистые и тщательно отобранные отели с учетом ваших культурных предпочтений.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-person-fill fs-1 text-primary mb-4"></i>
+                        <h5>Гиды</h5>
+                        <p>Опытные, многоязычные гиды, предлагающие познавательные и уважительные <br> экскурсии.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-calendar-event fs-1 text-primary mb-4"></i>
+                        <h5>Организация мероприятий</h5>
+                        <p>От семейных торжеств до деловых встреч — мы все спланируем с заботой.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-bank fs-1 text-primary mb-4"></i>
+                        <h5>Культурные туры</h5>
+                        <p>Откройте для себя историю, традиции и наследие ЮНЕСКО Узбекистана с нашими экспертами.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-file-earmark-text fs-1 text-primary mb-4"></i>
+                        <h5>Индивидуальные маршруты</h5>
+                        <p>Гибкие и индивидуальные туры, соответствующие вашим интересам и ритму.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-bus-front fs-1 text-primary mb-4"></i>
+                        <h5>Трансфер из/в аэропорт</h5>
+                        <p>Надежные встречи и проводы с комфортным транспортом. <br> <br> <br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="bi bi-telephone fs-1 text-primary mb-4"></i>
+                        <h5>Круглосуточная поддержка</h5>
+                        <p>Мы всегда на связи — поддержка вашем предпочитаемом языке. <br> <br> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-12">
+                <h4 class="text-white mb-3">Контакты</h4>
+                <div class="d-flex justify-content-between flex-wrap text-light w-100">
+                    <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i>Ул. Нуробод 6/1, Самарканд, Узбекистан</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt me-2"></i>+998906016330</p>
+                    <p class="mb-0"><i class="fa fa-envelope me-2"></i>all.season.travel0@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-center">
+                    &copy; <a class="border-bottom" href="#">allseason.life</a>, Все права защищены.
+                    Разработано <a class="border-bottom" href="#">All Season</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="js/lang-router.js"></script>
+
+</body>
+
+</html>

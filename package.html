@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>All Season – Your Gateway to Uzbekistan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo%20only.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<!--Tour Modal-->
+<div class="modal fade" id="tourModal" tabindex="-1" aria-labelledby="tourModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tourModalLabel">Исторические сокровища Самарканда</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Tour content will be inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="img/logo%20only.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="package.html" class="nav-item nav-link active">Packages</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Language</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item" onclick="switchLang('en')">English</a>
+                            <a href="#" class="dropdown-item" onclick="switchLang('ru')">Русский</a>
+                            <a href="#" class="dropdown-item" onclick="switchLang('uz')">O‘zbek</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Contact Us Now!</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">Packages</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Packages</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Package Start -->
+    <div id="ourpackages" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Awesome Packages</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-1.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Samarkand</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$150.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience the majesty of Samarkand in one day! Explore Registan, Shah-i-Zinda, enjoy a traditional lunch, and stroll through the oriental bazaar. Perfect for two!</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
+                                   style="border-radius: 30px 0 0 30px;"
+                                   data-bs-toggle="modal"
+                                   data-bs-target="#tourModal"
+                                   onclick="showTourDetails('samarkand')">
+                                    Read More
+                                </a>
+                                <a href="#booking-form-a" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Bukhara</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$140.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Feel the magic of Bukhara in just one day! Explore the Ark Fortress, Poi-Kalyan, local bazaars, and enjoy lunch in a traditional restaurant. Perfect for two!
+                           </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
+                                   style="border-radius: 30px 0 0 30px;"
+                                   data-bs-toggle="modal"
+                                   data-bs-target="#tourModal"
+                                   onclick="showTourDetails('indonesia')">
+                                    Read More
+                                </a>
+                                <a href="#booking-form-a" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-3.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Khiva</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$190.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Discover Khiva’s charm in just one day! Walk through Itchan-Kala, admire Kalta Minor, and enjoy a Khorezm-style lunch. <br> Perfect for two!</p>
+                            <div id="booktour" class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
+                                   style="border-radius: 30px 0 0 30px;"
+                                   data-bs-toggle="modal"
+                                   data-bs-target="#tourModal"
+                                   onclick="showTourDetails('malaysia')">
+                                    Read More
+                                </a>
+                                <a id="booking-form-a" href="#booking-form-a" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Package End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">
+                            Plan your adventure in just a few clicks. With our easy online booking form, you can choose your destination, select the perfect time, and let us know your special requests.
+                        </p>
+                        <p class="mb-4">
+                            Whether it’s a cultural tour or a family escape — we’ll take care of every detail. Fill in the form and our team will get back to you shortly.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book A Tour</h1>
+                        <form id="booking-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" name="datetime" placeholder="Date & Time" required>
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="destination" name="destination" required>
+                                            <option value="">Choose...</option>
+                                            <option value="Samarkand">Samarkand</option>
+                                            <option value="Bukhara">Bukhara</option>
+                                            <option value="Khiva">Khiva</option>
+                                        </select>
+                                        <label for="destination">Destination</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="submit-btn" class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="booking-response" class="mt-3 text-white text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="bi-geo-alt-fill fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Explore our curated tour options across Uzbekistan — from ancient cities to breathtaking landscapes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="bi-credit-card-fill fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Secure your spot with convenient and safe online payment. We accept major cards and international transfers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="bi-airplane-engines fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Fly Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Pack your bags and get ready for a smooth, fully organized trip — we’ll take care of the <br> rest!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-12">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <div class="d-flex justify-content-between flex-wrap text-light w-100">
+                        <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i>6/1, Nurobod str.
+                            Samarkand. Uzbekistan</p>
+                        <p class="mb-0"><i class="fa fa-phone-alt me-2"></i>+998906016330</p>
+                        <p class="mb-0"><i class="fa fa-envelope me-2"></i>all.season.travel0@gmail.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-center">
+                        &copy; <a class="border-bottom" href="#">allseason.life</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">All Season</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script>
+        const tourData = {
+            samarkand: {
+                title: "Historical Treasures of Samarkand",
+                content: `
+      <p><strong>Duration:</strong> 1 day</p>
+      <p><strong>Format:</strong>  Private tour for 2 people with a professional guide</p>
+      <p><strong>Guide language:</strong> Russian (other languages available upon request)</p>
+      <p><strong>Suitable for:</strong> All types of travelers</p>
+      <hr>
+      <p><strong>Description:</strong><br>
+      Discover the grandeur of Samarkand — one of the oldest cities in the world and a gem of the Silk Road. During this one-day tour, the two of you will visit the most iconic landmarks of the city and immerse yourselves in its history, architecture, and rich Eastern culture.</p>
+      <p><strong>Tour Program:</strong><br>
+          09:00 — Meet your guide at your hotel or a pre-agreed location.<br>
+          09:30 — Visit Registan Square (Ulugh Beg, Sher-Dor, and Tilya-Kori madrasahs).<br>
+          11:00 — Gur-e-Amir Mausoleum — the final resting place of the great Tamerlane.<br>
+          12:00 — Lunch at a traditional restaurant for two (included in the tour).<br>
+          13:30 — Shah-i-Zinda Complex — a street of mausoleums from the 14th–15th centuries.<br>
+          15:00 — Ulugh Beg Observatory — a legacy of medieval science.<br>
+          16:00 — Bibi-Khanym Mosque — a grand architectural monument of the Timurid era.<br>
+          17:00 — Free time at Siyob Bazaar for local shopping and exploration.<br>
+          18:00 — Return to hotel. End of the tour.</p>
+      <p><strong>Included in the price:</strong><br>
+      - Private transport with air conditioning and driver<br>
+      - Russian-speaking guide (others on request)<br>
+      - Entry tickets to all listed sites<br>
+      - Lunch for two<br>
+      - Bottled water and light snacks<br>
+      - All taxes and fees
+
+      </p>
+      <p><strong>Recommended to bring:</strong><br>
+      - Comfortable shoes<br>
+      - Hat and sunscreen<br>
+      - Camera or smartphone</p>
+      <p><strong>Notes:</strong><br>
+      The tour can be customized to your pace and preferences. Interpretation available in Japanese, English, French, and other languages.</p>
+       <p><strong>Samarkand in Detail:</strong><br>
+       Samarkand is the heart of ancient civilization and one of the brightest jewels of the Great Silk Road. With over a thousand years of rich history and cultural heritage, the city amazes travelers from all over the world. During the tour, you'll immerse yourself in the Timurid era, visit the legendary Registan Square, and witness the grandeur of Gur-e-Amir, where the great Tamerlane rests. <br> <br>
+
+        You’ll explore the spiritual Shah-i-Zinda complex, discover Ulugh Beg’s scientific legacy at his observatory, and marvel at the grand Bibi-Khanym Mosque. A traditional Uzbek lunch awaits you in a cozy local restaurant. The vibrant Siyob Bazaar will charm you with its spices, dried fruits, and local crafts. This tour is the perfect way to experience the essence of Samarkand in one relaxing and well-paced day.
+       </p>
+    `
+            },
+            indonesia: {
+                title: "Eastern Magic of Bukhara",
+                content: `
+          <p><strong>Duration:</strong> 1 day</p>
+      <p><strong>Format:</strong>  Private tour with a professional guide</p>
+      <p><strong>Guide language:</strong> Russian (other languages available upon request)</p>
+      <p><strong>Suitable for:</strong> All categories of travelers</p>
+      <hr>
+      <p><strong>Description:</strong><br>
+      Bukhara is an open-air museum city that has preserved the spirit of the ancient East. This one-day tour through the historical center of Bukhara will immerse you in the atmosphere of medieval caravanserais, minarets, and mausoleums. Enjoy authentic architecture and true oriental hospitality.</p>
+      <p><strong>Tour Program:</strong><br>
+          09:00 — Meet your guide at the hotel or agreed location<br>
+          09:30 — Visit the Ark Fortress — ancient citadel of Bukhara emirs<br>
+          10:30 — Bolo Hauz Mosque and Kalyan Minaret — symbols of spiritual Bukhara<br>
+          11:30 — Visit Mir-i-Arab Madrasah and the Poi-Kalyan complex<br>
+          12:30 — Lunch at a traditional restaurant (included)<br>
+          14:00 — Explore the trade domes: Toki Zargaron, Toki Sarrafon, Toki Telpak Furushon<br>
+          15:30 — Lyabi Hauz Complex — a favorite place for rest<br>
+          16:30 — Free time for souvenirs and photos<br>
+          17:30 — Return to hotel. End of tour</p>
+      <p><strong>Included in the price:</strong><br>
+      - Private transport (with A/C)<br>
+      - Russian-speaking guide<br>
+      - All entrance tickets<br>
+      - Lunch at a restaurant<br>
+      - Water and snacks<br>
+      - Taxes and fees
+
+      </p>
+      <p><strong>Recommended to bring:</strong><br>
+      - Comfortable shoes<br>
+      - Hat and sunscreen<br>
+      - Camera or smartphone</p>
+      <p><strong>Notes:</strong><br>
+      The route can be customized. English, French, Japanese and other languages available.</p>
+       <p><strong>Bukhara in Detail:</strong><br>
+       Bukhara is a living encyclopedia of the East — a city where every stone holds centuries of secrets. Having survived many eras, it still amazes with its atmosphere, architecture, and timeless wisdom. In this tour, you'll walk through the ancient Ark Fortress, stepping back into the time of emirs. <br> <br>
+
+       The Kalyan Minaret and Mir-i-Arab Madrasah reflect Bukhara’s spiritual depth, while the domed bazaars immerse you in the vibrant spirit of the Silk Road. At Lyabi-Hauz, you'll relax by the water, sipping tea and absorbing the charm of the Orient. A traditional lunch will introduce you to a cuisine where every flavor tells a story. Bukhara inspires and leaves a mark on the soul — a journey through space and time, rich, personal, and unforgettable.
+       </p>
+    `
+            },
+            malaysia: {
+                title: "Secrets of Ancient Khiva",
+                content: `
+       <p><strong>Duration:</strong> 1 day</p>
+<p><strong>Format:</strong> Private tour with a professional guide</p>
+<p><strong>Guide Language:</strong> Russian (other languages available upon request)</p>
+<p><strong>Suitable for:</strong> All categories of travelers</p>
+<hr>
+<p><strong>Description:</strong><br>
+Khiva is an open-air museum surrounded by fortress walls, hiding minarets, madrasahs, and palaces with centuries of history. This one-day tour offers full immersion into the atmosphere of a historic oriental city, where every alley is a living legend.</p>
+<p><strong>Tour Program:</strong><br>
+09:00 — Meet your guide at the hotel or at the main gate of Itchan-Kala.<br>
+09:30 — Tour of the Itchan-Kala complex (UNESCO): Kalta-Minor minaret, Muhammad Amin Khan Madrasah, and Kunya Ark.<br>
+11:00 — Visit the Mausoleum of Pahlavan Mahmud — the spiritual patron of Khiva.<br>
+12:30 — Lunch at a traditional restaurant with Khorezmian cuisine.<br>
+14:00 — Explore the Juma Mosque with its carved wooden columns and unique acoustics.<br>
+15:00 — Visit Alla-Kuli Khan Madrasah, caravanserai, and the old eastern bazaar.<br>
+16:00 — Free time for walking, shopping, and photos.<br>
+17:00 — End of tour. Return to hotel or transfer to station/airport.
+</p>
+<p><strong>Included:</strong><br>
+- Private transport<br>
+- Russian-speaking guide<br>
+- Entrance tickets to museums and landmarks<br>
+- Lunch at a restaurant<br>
+- Water and light snacks<br>
+- All taxes and fees
+</p>
+<p><strong>Recommended to bring:</strong><br>
+- Comfortable shoes<br>
+- Hat and sunglasses<br>
+- Camera or smartphone
+</p>
+<p><strong>Note:</strong><br>
+The tour can be customized. English, French, Japanese, and other languages available.
+</p>
+
+       <p><strong>Khiva in Detail:</strong><br>
+      Khiva is a city where time stands still. The narrow alleys of Itchan-Kala, clay walls, carved portals, and majestic minarets give the feeling of stepping into a living Eastern fairy tale. This tour is not just an excursion, but a true journey into the past. You’ll hear legends of khans, architects, and sages; visit sacred mausoleums, mosques, and madrasahs where life once thrived. The atmosphere of Khiva captivates with its silence, harmony, and authenticity. A lunch featuring Khorezmian cuisine will complete your experience with flavors of the region. Khiva is not just a place to see — it's a place to feel. And this day will stay with you forever.
+       </p>
+    `
+            }
+        };
+
+        function showTourDetails(key) {
+            const tour = tourData[key];
+            if (tour) {
+                document.getElementById('tourModalLabel').textContent = tour.title;
+                document.getElementById('modalContent').innerHTML = tour.content;
+            }
+        }
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/lang-router.js"></script>
+
+</body>
+
+</html>
